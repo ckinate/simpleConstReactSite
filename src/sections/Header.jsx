@@ -58,10 +58,10 @@ export default function Header() {
         onClick={closeMenu}>
         <ul className='flex flex-col justify-center items-center gap-2 w-full'>
           {
-            navItems.map(({link,path}) => {
+            navItems.map(({link,path}) => (
               <Link key={path} className='text-black uppercase font-semibold cursor-pointer p-2 rounded-lg hover:bg-black
                hover:text-white w-full text-center' to={path} spy={true} offset={-100} smooth={true}>{link}</Link>
-            })
+            ))
           }
 
         </ul>
